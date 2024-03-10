@@ -53,3 +53,34 @@ public class Main {
         return input.length();
     }
 }
+
+class Mahasiswa {
+    private String nim;
+    private String name;
+    private String faculty;
+
+    public Mahasiswa(String nim, String name, String faculty)
+    {
+        if (nim.length == 15)
+        {
+            this.nim = nim;
+        } else
+        {
+            System.out.println("Error. NIM harus terdiri dari 15 angka.");
+        }
+        this.name = name;
+        this.faculty = faculty;
+    }
+
+    public static void tampilUniversitas()
+    {
+        System.out.println("Universitas Muhammadiyah Malang");
+    }
+
+    public void tampilMahasiswa()
+    {
+        System.out.println("NIM " + nim);
+        System.out.println("Nama: " + name);
+        System.out.println("Faculty " + faculty);
+    }
+}
